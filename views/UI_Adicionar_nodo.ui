@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>275</width>
+    <height>196</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>271</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+	border: 2px solid rgb(39, 142, 39);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+}
+QLineEdit{
+	border: 1px solid rgb(208, 208, 191);
+	border-radius: 3px;
+	color: rgb(0, 0, 0);
+}
+
+QPushButton{
+	color: rgb(0, 0, 0);
+	background-color: qlineargradient(spread:pad, x1:0.494318, y1:1, x2:0.5, y2:0, stop:0 rgba(116, 159, 229, 255), stop:1 rgba(228, 235, 247, 255));
+	border-top: 1px solid rgb(202, 202, 202);
+	border-bottom: 1px solid rgb(70, 70, 70);
+	border-left: 1px solid qlineargradient(spread:pad, x1:0.505682, y1:1, x2:0.505227, y2:0, stop:0 rgba(70, 70, 70, 255), stop:1 rgba(202, 202, 202, 255));
+	border-right: 1px solid qlineargradient(spread:pad, x1:0.505682, y1:1, x2:0.505227, y2:0, stop:0 rgba(70, 70, 70, 255), stop:1 rgba(202, 202, 202, 255));
+}
+
+QPushButton:hover{
+	color: rgb(0, 0, 0);
+	border: none;
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:0, x2:0.568, y2:1, stop:0 rgba(116, 159, 229, 255), stop:1 rgba(228, 235, 247, 255));
+}
+
+QPushButton:checked{
+	color: rgb(0, 0, 0);
+	background-color: qlineargradient(spread:pad, x1:0.511, y1:0, x2:0.568, y2:1, stop:0 rgba(116, 159, 229, 255), stop:1 rgba(228, 235, 247, 255));
+	border-bottom: 1px solid rgb(202, 202, 202);
+	border-top: 1px solid rgb(70, 70, 70);
+	border-left: 1px solid qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.488, y2:1, stop:0 rgba(70, 70, 70, 255), stop:1 rgba(202, 202, 202, 255));
+	border-right: 1px solid qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.488, y2:1, stop:0 rgba(70, 70, 70, 255), stop:1 rgba(202, 202, 202, 255));
+}
+
+QPushButton:disabled{
+	color: rgb(136, 136, 136);
+	border: 1px solid rgb(167, 167, 167);
+	
+	background-color: rgb(238, 238, 238);
+}
+
+
+QComboBox{
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(172, 172, 172);
+	background-color: qlineargradient(spread:pad, x1:0.494, y1:1, x2:0.5, y2:0, stop:0 rgba(230, 230, 230, 255), stop:1 rgba(239, 239, 239, 255));
+	text-align: right;
+}
+
+QComboBox:hover{
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(86, 157, 229);
+	background-color: qlineargradient(spread:pad, x1:0.505682, y1:1, x2:0.511, y2:0, stop:0 rgba(220, 236, 252, 255), stop:1 rgba(234, 243, 252, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Adicionar</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>12</y>
+      <width>241</width>
+      <height>136</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Nombre del Nodo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>15</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Título EA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>55</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>IP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>87</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Puerto</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>65</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>61</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>78</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>Estación</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Servidor</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
